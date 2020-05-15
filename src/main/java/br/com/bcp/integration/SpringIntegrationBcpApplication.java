@@ -10,15 +10,10 @@ import org.springframework.context.annotation.ImportResource;
 @SpringBootApplication
 @Configuration
 @ImportResource("integration-context.xml")
-public class SpringIntegrationBcpApplication implements ApplicationRunner{
+public class SpringIntegrationBcpApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringIntegrationBcpApplication.class, args);
-	}
-
-	@Override
-	public void run(ApplicationArguments args) throws Exception {
-		
 	}
 
 }
